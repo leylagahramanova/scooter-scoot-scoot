@@ -1,0 +1,108 @@
+.jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+ padding-left:5%;
+ padding-right:5%;
+  }.title1{
+    display:flex;
+    flex-wrap:nowrap;
+  }
+  .title1 h2{
+    width:100%;
+    font-family: Space Mono, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.0714285373687744px;
+    text-align: right;
+    height: 28px;
+    color:var( --header);
+}
+.description1 p{
+    font-family: Lexend Deca,sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+width: 650px;
+height: 25px;
+color:var( --header);
+}
+  .job {
+    display: flex;
+   height:128px;
+    flex-direction: row; /* Keep items side by side */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Job takes full width of its parent */
+    padding: 1.2rem 1rem;
+    margin: 1rem 0; /* Adjust margin for vertical spacing */
+    background-color: #F2F5F9;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+  }
+  
+  .context2 {
+    flex: 1; /* Allows it to expand */
+    display: flex;
+    width:320px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .buttonjob {
+    /* Ensures button area does not shrink too much, making button invisible or too small */
+    flex-shrink: 0; 
+    padding: 0 15px; /* Add padding around the button area for spacing */
+  }
+  .job button{
+    width: 180px;
+   height: 53px;
+
+border:none;
+    font-family: Space Mono, sans-serif;
+    background-color: #FCB72B;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+  /* Responsive adjustments */
+  @media (max-width: 667px) {
+    .title1 h2, .description1 p {
+        
+        text-align: center; /* Center text for smaller screens */
+      }
+      .title1 h2{
+        width:100%;
+        height:28px;
+    
+      }.description1 p{
+        width:100%;
+        height:25px;
+      }
+      .context2, .buttonjob {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+    
+      .job {   height:auto;
+        display:flex;
+        flex-direction: column; /* Stack elements vertically on small screens */
+        padding: 1rem 0rem 1rem 0rem; /* Adjust padding */
+      }
+    
+      .job button {
+        margin-top: 1rem; /* Add some space above the button */
+      }
+   
+      
+    }

@@ -1,0 +1,136 @@
+.subfooter-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .subfooter {
+
+
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    margin: 0 auto;
+    background-color:#333A44;
+    height: 96px;
+  }
+  .menuicons{
+    display:flex;
+    justify-content:space-between;
+    width: 100%;
+  }
+  .subfooter-container {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+  }
+  .subfooter-menu{
+    display:flex;
+    flex-wrap:nowrap;
+  }
+  .subfooter-menu li {
+    display: inline-block;
+    padding-left:  20px;
+    font-weight: 700;
+  }
+
+  .subfooter-menu li a {
+
+display:flex;
+flex-wrap:nowrap;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #939caa;
+    font-family: Space Mono, sans-serif;
+    transition: all 0.3s linear 0s;
+
+  }
+  
+
+  .subfooter-links:hover {
+    color: #FCB72B;
+  }
+  
+  .subfooter-links.active {
+    color: #FCB72B;
+  }
+
+  .subfooter-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  .subfooter-logo h3 {
+    font-family: 'Space Mono', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  
+  .subfooter-list {
+    list-style: none;
+    overflow: hidden;
+  }
+  .footer-iconss{
+    width:8rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  @media screen and (max-width: 632px) {
+    .menuicons{
+      display: flex;
+      flex-direction:column;
+    }
+    .subfooter-menu{
+      display:flex;
+      flex-wrap:wrap;
+      flex-direction:column;
+    }
+    .subfooter{
+      height:auto;
+      display: flex;
+      flex-direction:column;
+    }
+    .subfooter-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+    }
+    .subfooter-logo{
+      width:100%;
+      padding-top:6rem;
+      padding-bottom:2rem;
+      text-align:center;
+    }
+    .subfooter-menu li{
+padding-left:0
+    }
+    .footer-iconss{
+      margin-top:7rem;
+      margin-bottom:8rem;
+      display:flex;
+   width:100%;
+   justify-content: center; }
+   .footer-iconss a{
+    margin:1rem;
+
+   }
+   
+   .subfooter-menu li a {
+    padding-bottom:2rem;
+   }
+  }

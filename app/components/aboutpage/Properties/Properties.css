@@ -1,0 +1,88 @@
+.properties{
+
+    /* display: flex;
+    justify-content:space-between;
+    flex-direction:column;
+    align-items:center;
+    flex-wrap:wrap; */
+    padding-left:4%;
+    padding-right:4%;
+}
+.grey-circle2 img  {
+   width: 70%; /* Double the size for a semi-circle */
+   height:300px; /* Height to control the visible part for a semi-circle */
+   /* background-color: #E5ECF4;
+   position:relative;
+   border-top-left-radius:300px; 
+   border-top-right-radius: 300px; 
+   overflow: hidden; 
+   border-bottom-left-radius: 0; 
+   border-bottom-right-radius: 0;  */
+   z-index:1;
+ }
+ .grey-circle2.left2 {
+   right:-1rem ;
+   position: absolute;rotate:180deg;
+   margin-right: auto; /* Pushes the circle to the left */
+}
+
+.grey-circle2.right2 {
+   left:-1rem ;
+   position: absolute;rotate:360deg;
+   margin-left: auto; /* Pushes the circle to the right */
+}
+.property{
+height: 445px;
+margin:2rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.context2 button{
+   width: 180px;
+height: 53px;
+margin-top:3rem;
+
+border:none;
+font-family: Space Mono, sans-serif;
+background-color: #FCB72B;
+font-weight: 700;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+color: #FFFFFF;
+}
+.context2{
+   display: flex;
+   flex-direction:column;
+}
+
+.property-img img{
+   width: 400px;
+   height: 400px;
+   border-radius:50%;
+   
+}
+.property h2{
+   width: 370px;
+   height: 96px;
+color:var( --header);
+font-family: Space Mono, sans-serif;
+font-size: 48px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -2.142857074737549px;
+text-align: left;
+}
+.property p{
+   padding-top:1rem;
+   width: 445px;
+   height: 100px;
+font-family: Lexend Deca, sans-serif;
+font-size: 17px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+
+   color:var(--text);
+}

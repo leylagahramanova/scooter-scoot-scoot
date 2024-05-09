@@ -1,0 +1,91 @@
+:root{
+    --background-color:#fff;
+  --header:#495567;
+  --text:#939CAA;
+  --footback:#68788d;
+    --toggle-bg:#f0eb9d;
+    --toggle-fg:#ffd000;
+    }
+    [data-theme="dark"]{
+      --background-color:#495567;
+      --header:#fbfcff;
+      --text:#eef4ff;
+      --toggle-bg:#283452;
+      --toggle-fg:#00a6ff;
+    
+    }
+    .toggle-container {
+  
+      position:absolute;
+      top:1.2rem;
+      z-index:5;
+      left: 30rem;
+      
+      } @media screen and (max-width: 785px)
+      { 
+       .toggle-container {
+     
+         position:absolute;
+         top:1.2rem;
+         margin-right:5%;
+         margin-left:5%;
+         left: 24rem!important;
+         
+     }
+       }
+       @media screen and (max-width: 695px) {
+         .toggle-container {
+     
+           position:absolute;
+           top:1.2rem;
+           margin-right:5%;
+           margin-left:5%;
+           left: 2rem!important;
+           
+       }}
+      .toggle {
+      visibility: hidden;}
+      .toggle + label{
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;}
+    
+        .toggle + label::before{
+          content:"";
+          height:1em;
+          width:2em;
+          text-align:center;
+          border-radius:1em;
+          background-color:var(--toggle-bg);
+          margin-right:0.5em;}
+          .toggle + label::after {
+            content: "";
+            height: 0.8em;
+            width: 0.8em;
+            border-radius: 1em;
+            background-color:var(--toggle-fg);
+            position: absolute;
+            left: 0.2em;
+            transition:background-color 250ms ease-in-out, transform 250ms ease-in-out;
+            }
+            .toggle:checked + label::after{
+              transform:translateX(100%)
+            }
+    ::-webkit-scrollbar{
+      width:15px;
+      opacity: 0.5;
+    }
+    
+    .label{
+      text-align:center;
+    }
+    
+    ::-webkit-scrollbar-track{
+    
+      opacity: 0.5;
+      box-shadow:inset 0 0 10px rgba(0,0,0, 0.25);
+    }::-webkit-scrollbar-thumb{
+      opacity: 0.2;
+      background-color: #1a1a1a;
+    }
+  

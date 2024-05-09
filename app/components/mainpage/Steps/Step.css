@@ -1,0 +1,191 @@
+.steps {
+    display: flex;
+    position: relative; /* This is already set, ensuring it's noted */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top:11rem;
+    padding-left:5%;
+     padding-right:5%;
+}.step{
+    display: flex;
+    flex-direction:column;
+}
+.circle{
+    background:#FCB72B;
+    width: 96px;
+    height: 96px;
+    border-radius:50%;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.circle img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:absolute;
+    
+}
+.step h2{
+    
+    margin-bottom:2rem;
+height: 28px;
+color:var( --header);
+    font-family: Space Mono, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.0714285373687744px;
+    text-align: left;
+    
+}.step-text{
+    max-width: 320px;
+}
+.step p{
+    max-width:320px;
+height: auto;
+    font-family: Lexend Deca, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color:var(--text);
+}
+.line2 {
+    position: absolute;
+    bottom: 13rem; /* Position it at the bottom of the '.steps' container */
+    left: 0;
+    width: 100%; /* Span the full width of the container */
+    border-top: 6px solid #E5ECF4; /* Make it a horizontal line */
+    /* No need for 'rotate' since we're now using it as a horizontal line */
+}
+@media screen and (max-width: 600px){
+    .steps{
+        /* max-width:30rem!important; */
+        display:flex;
+        justify-content: center!important;
+        align-content: center!important;
+        align-items: center!important;
+       }
+     
+}@media screen and (max-width: 1067px){
+    .step-text{
+        max-width: 250px;
+    }
+}
+@media screen and (max-width: 861px){
+    .step-text{
+        max-width: 230px;
+    }
+}
+@media screen and (max-width: 654px){
+ 
+    .line2 {
+       display:none; }
+       .steps{
+        display:flex;
+       }
+       .steps{
+        /* max-width:20rem; */
+        display: flex!important;
+        justify-content: center!important;
+        align-content: center!important;
+        align-items: center!important;
+       }
+       .circle{
+        margin-right:3.2rem;
+       }
+       .step{
+ 
+        padding-right:0!important;
+        padding-left:0!important;
+        margin-bottom:5rem;
+        display: flex!important;
+        flex-direction: column!important;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .step h2{
+        width:100%;
+        margin-top:0.5rem;
+        margin-bottom:0;
+        text-align:center;
+        padding-right:2.5rem;
+    }
+    .step p{
+        width:100%;
+        height:auto;
+        text-align:center;
+    }
+}
+@media screen and (max-width: 780px) {
+    .step-text{
+        max-width: 320px!important;
+     
+    }
+}
+
+@media screen and (max-width: 781px) {
+    .step-text{
+        max-width: 230px;
+    }
+    .steps {
+        display:flex;
+        padding-right:0!important;
+        padding-left:0!important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;}
+
+ 
+    .step{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+    }
+.description{
+    width:320px;
+    height:auto;
+}
+.circle{
+    margin-right:1.5rem;
+}
+.step-text{
+    position: relative;
+    left:4rem!important;
+}.step{
+    width: 100%;
+}
+    .step p{
+        height:auto;
+    }
+    .line2 {
+        position: relative;
+         /* Position it at the bottom of the '.steps' container */
+left:-11rem;
+    top:6.2rem;
+        rotate:90deg;
+        width: 35rem; /* Span the full width of the container */
+        border-top: 10px solid #E5ECF4; /* Make it a horizontal line */
+        /* No need for 'rotate' since we're now using it as a horizontal line */
+    }
+}
+@media screen and (max-width: 653px) {
+    .steps{
+        /* max-width:30rem!important; */
+        display:flex;
+        justify-content: center!important;
+        align-content: center!important;
+        align-items: center!important;
+       }
+     
+    .step-text{
+        position: relative;
+        left:0!important;
+    }
+}

@@ -1,0 +1,20 @@
+.cont button{
+ 
+    width: 180px;
+  height: 53px;
+  margin-top:3rem;
+  border:none;
+  font-family: Space Mono, sans-serif;
+  background-color: #FCB72B;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  }
+
+  .cont button:hover{
+    background-color: #FFF;
+border:2px solid #FCB72B;
+    color: #FCB72B;
+  }

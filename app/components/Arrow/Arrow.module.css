@@ -1,0 +1,43 @@
+
+.zigzag-arrow{
+    display: flex;
+    justify-content: flex-end;
+position:absolute;
+margin-right:20rem;
+bottom:10rem;
+z-index:100;
+}
+.horisontal{
+    border-left: 15px solid #FCB72B;
+    height: 400px;
+    rotate:90deg;
+    position:relative;
+}
+.horisontal2{
+    border-left: 15px solid #FCB72B;
+    height: 200px;
+    rotate:90deg;
+    margin-top:12.2rem;
+    position:relative;
+    margin-left:6rem;
+}
+.vertical{
+    border-left: 15px solid #FCB72B;
+    height: 100px;
+    position:relative;
+    margin-top:12.4rem;
+    margin-left:12rem;
+}
+.big-arrow{
+    margin-left:1.7rem;
+    position:relative;
+    margin-top:16.5rem;
+      border:  10px solid #FCB72B;
+      border-width: 0 6px 6px 0;
+          width: 4rem;
+    height: 4rem;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+}

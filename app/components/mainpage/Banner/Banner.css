@@ -1,0 +1,236 @@
+.scooter{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 41rem;
+    background-color:#495567;
+    position: relative;
+}
+.scoot{
+
+}
+.scooter::before{
+    content:"";
+    background-position: center; 
+  position: absolute; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../img/banner.png");
+  background-color:#495567;
+  opacity: 30%;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  }
+
+  /* .scooter *{
+    z-index: 5;
+  } */
+  .scoot-back{
+    display:flex;
+    /* flex-wrap:wrap; */
+    justify-content: space-between;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+   }
+.scooter h1{
+    width: 500px;
+height:auto;
+color:#fff;
+    font-family: Space Mono, sans-serif;
+margin-left:5rem;
+/* padding-top:10rem; */
+font-size: 56px;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: -2.5px;
+text-align: left;
+
+}
+
+.scootin p{
+    max-width: 405px;
+    height: auto;
+
+    font-family: Lexend Deca, sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+text-align: left;
+
+color:#fff;
+}
+.scootin{
+    margin-left:2rem;
+/* padding-top:9rem; */
+/* margin-left:15rem; */
+}
+
+.scootin button{
+        width: 180px;
+    height: 53px;
+margin-top: 2rem;
+border:none;
+    font-family: Space Mono, sans-serif;
+    background-color: #FCB72B;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}   .white-circle1{
+    position:relative;
+    z-index: 2;
+    color:#fff;
+    width: 30px !important;
+height: 62px!important;
+    border-radius: 31px 31px 0 0;
+  
+}
+.scootin button:hover{
+    color: #FCB72B;
+    background-color:  #FFF;
+    border:2px solid  #FCB72B;
+
+}
+.white-circles{
+    display: flex;
+    justify-content: flex-end;
+position:relative;
+top:11rem;
+left:-5px;
+ }/*
+.white-circle1{
+    position:relative;
+    z-index: 2;
+    color:#fff;
+    width: 30px !important;
+height: 62px!important;
+    border-radius: 31px 31px 0 0;
+  
+} */
+.white-circle{
+    color:#fff;
+    width: 62px !important;
+height: 62px!important;
+}.scoot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.symbols{
+    position:relative;
+    
+    margin-top:19rem;
+} .zigzag-arrow{
+    display: flex;
+    justify-content: flex-end;
+position:relative;
+margin-right:12rem;
+bottom:10rem;
+}
+.horisontal{
+    border-left: 6px solid #FCB72B;
+    height: 400px;
+    rotate:90deg;
+    position:relative;
+}
+.horisontal2{
+    border-left: 6px solid #FCB72B;
+    height: 200px;
+    rotate:90deg;
+    margin-top:12.2rem;
+    position:relative;
+    margin-left:6rem;
+}
+.vertical{
+    border-left: 6px solid #FCB72B;
+    height: 100px;
+    position:relative;
+    margin-top:12.4rem;
+    margin-left:12rem;
+}
+.big-arrow{
+    margin-left:1.7rem;
+    position:relative;
+    margin-top:16.5rem;
+      border:  10px solid #FCB72B;
+      border-width: 0 6px 6px 0;
+          width: 4rem;
+    height: 4rem;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+}
+@media screen and (max-width:1270px){
+    .symbols{
+        margin-top:0;
+        position:relative;
+   top:25rem;
+   left:-27rem;
+    }
+
+}
+@media screen and (max-width: 958px) {
+    .scooter *{
+        display:flex;
+    
+        align-items: center;
+        text-align: center;
+       justify-content: center;
+        flex-direction:column;
+        /* z-index: 5; */
+      }
+ 
+    .scooter h1 {
+        margin-left:0;
+        text-align:center;
+        width:100%;
+        padding-top: 5rem;
+        font-size: 4rem; /* Adjusted font size */
+        /* padding-top: 5rem; Reduced padding-top for space efficiency */
+    }
+  .scootin p { text-align:center;
+    width:100%;
+        font-size: 1.5rem; /* Adjust font size for readability */
+    }
+
+    .scootin {
+        padding-top: 2rem;
+        /* padding-top:7rem!important; */
+margin-left:0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; /* Ensure text alignment is centered */
+    }
+
+    .scootin button {
+        /* margin-top: 5rem!important; */
+        width: 80%; /* Make button width responsive */
+        max-width: 200px; /* Avoid overly wide buttons */
+        padding: 0.5rem; /* Adjust padding for better touch targets */
+    }
+    .symbols{
+        display:none;
+    }
+
+.scoot-back{
+    display:flex;
+    flex-direction:column;
+}
+    /* Adjust layout for .scoot-back and its children */
+    .scoot-back {
+        flex-direction: column;
+        align-items: center; /* Center-align children */
+        text-align: center;
+    }
+
+    /* Additional adjustments for other elements as needed */
+}
